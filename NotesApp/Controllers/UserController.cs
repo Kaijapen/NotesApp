@@ -100,7 +100,7 @@ public class UserController : Controller
     }
 
     // Get request to logout a user
-    [HttpGet("users/logout")]
+    [HttpGet("User/Logout")]
     public IActionResult Logout()
     {
         // Clear the session and redirect to the login page

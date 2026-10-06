@@ -29,7 +29,6 @@ D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\scopedcss\bundle\NotesApp.styles.css
 D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\scopedcss\projectbundle\NotesApp.bundle.scp.css
-D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\compressed\q1m7o860h1-{0}-b9sayid5wm-b9sayid5wm.gz
 D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\compressed\jtyvbhvvo4-{0}-61n19gt1b8-61n19gt1b8.gz
 D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\compressed\29dekilmj0-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\compressed\m5cl8olkaf-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -104,3 +103,7 @@ D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\refint\NotesApp.dll
 D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\NotesApp.pdb
 D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\NotesApp.genruntimeconfig.cache
 D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\ref\NotesApp.dll
+D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\NotesApp.sourcelink.json
+D:\CodingProjects\NotesApp\NotesApp\bin\Debug\net10.0\package-lock.json
+D:\CodingProjects\NotesApp\NotesApp\bin\Debug\net10.0\package.json
+D:\CodingProjects\NotesApp\NotesApp\obj\Debug\net10.0\compressed\q1m7o860h1-{0}-npsi6k9527-npsi6k9527.gz

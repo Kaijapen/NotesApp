@@ -1,3 +1,31 @@
 <div>
-    Success!
+
+        <p class="text-center">Welcome, @ViewBag.User.FirstName!</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="flex justify-center  items-center mb-3">
+            <h2 class="text-center mr-4">Your Notes</h2>
+            <a class="box-border p-2 rounded bg-slate-500 mb-3" asp-action="Create" asp-controller="Notes">+</a>
+
+            </div>
+            @if (ViewBag.Notes.Count == 0)
+            {
+                <div></div>
+            }
+            else
+            {
+                foreach (var note in ViewBag.Notes)
+                {
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">@note.Title</h5>
+                            <p class="card-text">@note.Content</p>
+                            <small class="text-muted">Created at @note.CreatedAt</small>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
 </div>

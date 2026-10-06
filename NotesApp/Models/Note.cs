@@ -17,4 +17,6 @@ public class Note
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+    public int UserId { get; set; }
 }

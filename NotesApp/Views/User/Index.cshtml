@@ -2,43 +2,48 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Welcome to the NotesApp! Please register or login to continue.</p>
-
-    <div>
-        <h1 class="display-4">Register</h1>
+    <div class="box-border p-4 rounded shadow-lg pb-5 bg-slate-500 text-zinc-300 max-w-lg mx-auto mt-10">
+        <h1 class="display-4 text-center">Sign Up</h1>
+        <p class="text-center">Already have an account? <a class="btn text-zinc-400 hover:text-zinc-300" asp-action="Login" asp-controller="User">Login here</a>.</p>
         <div class="row justify-content-center">
             <form asp-action="RegisterUser" asp-controller="User" method="post">
-                <div class="form-group">
-                    <label asp-for="FirstName"></label>
-                    <input asp-for="FirstName" class="form-control" />
-                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                <div class="form-group flex max-w-sm justify-center mb-3 mx-auto">
+                    <div class="form-group mr-2">
+                        <label asp-for="FirstName"></label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mx-auto">
+                        <label asp-for="LastName"></label>
+                        <input asp-for="LastName" class="form-control text-zinc-300" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+
                 </div>
-                <div class="form-group">
-                    <label asp-for="LastName"></label>
-                    <input asp-for="LastName" class="form-control" />
-                    <span asp-validation-for="LastName" class="text-danger"></span>
-                </div>
-                <div class="form-group">
+                <div class="form-group max-w-sm mx-auto mb-3">
                     <label asp-for="Email"></label>
                     <input asp-for="Email" class="form-control" />
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                <div class="form-group max-w-sm mx-auto mb-3">
                     <label asp-for="Password"></label>
                     <input asp-for="Password" class="form-control" />
                     <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                <div class="form-group max-w-sm mx-auto mb-3">
                     <label asp-for="ConfirmPassword">Confirm Password</label>
                     <input type="password" asp-for="ConfirmPassword" class="form-control" />
                     <span asp-validation-for="ConfirmPassword"></span>
                 </div>
-                <button type="submit" class="btn btn-primary">Register</button>
+                <div class="form-group max-w-sm mx-auto mb-3">
+                    <input type="checkbox" asp-for="StaySignedIn" />
+                    <label asp-for="StaySignedIn" class="form-check-label">Stay signed in?</label>
+                </div>
+                <div class="form-group mt-4 max-w-md mx-auto text-center bg-green-500 text-black max-w-sm rounded-lg p-2 hover:bg-slate-300">
+                    <button class="fill w-full" type="submit">Register</button>
+                </div>
             </form>
-            <p>Already have an account? <a asp-action="Login" asp-controller="User">Login here</a>.</p>
+            
         </div>
     </div>
-</div>
+

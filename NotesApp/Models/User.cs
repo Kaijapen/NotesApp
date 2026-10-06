@@ -10,26 +10,35 @@ public class User
     public int UserId { get; set; }
 
     [Required]
+    [Display(Name = "First name")]
     [MinLength(2, ErrorMessage = "First Name must be at least 2 characters long.")]
     public string FirstName { get; set; }
 
     [Required]
+    [Display(Name = "Last name")]
     [MinLength(2, ErrorMessage = "Last Name must be at least 2 characters long.")]
     public string LastName { get; set; }
 
     [Required]
+    [Display(Name = "Email")]
     [EmailAddress]
     [UniqueEmail]
     public string Email { get; set; }
 
     [Required]
+    [Display(Name = "Password")]
     [DataType(DataType.Password)]
     [MinLength(8, ErrorMessage = "Password must be at least 8 characters long.")]
     public string Password { get; set; }
 
     [NotMapped]
+    [Display(Name = "Confirm Password")]
     [Compare("Password", ErrorMessage = "Passwords do not match.")]
     public string ConfirmPassword { get; set; }
+
+    [NotMapped]
+    [Display(Name = "Stay signed in?")]
+    public bool StaySignedIn { get; set; } = false;
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;

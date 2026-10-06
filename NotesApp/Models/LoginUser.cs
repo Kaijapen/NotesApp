@@ -11,4 +11,7 @@ public class LoginUser
     [Required]
     [DataType(DataType.Password)]
     public string LoginPassword { get; set; }
+
+    [Display(Name = "Stay signed in?")]
+    public bool StaySignedIn { get; set; } = false;
 }

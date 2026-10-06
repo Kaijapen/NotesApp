@@ -1,19 +1,25 @@
 @model LoginUser
-<div>
-    <h1 class="display-4">Login</h1>
+<div class="box-border p-4 pb-5 rounded shadow-lg bg-slate-500 text-zinc-300 max-w-lg mx-auto mt-10">
+    <h1 class="display-4 text-center">Login</h1>
+    <p class="text-center">Don't have an account? <a class="btn text-slate-300" asp-action="Index" asp-controller="User">Register here</a>.</p>
     <span asp-validation-for="LoginEmail" class="text-danger"></span>
     <span asp-validation-for="LoginPassword" class="text-danger"></span>
 
     <form asp-action="LoginUser" asp-controller="User" method="post">
-        <div class="form-group">
+        <div class="form-group max-w-sm mx-auto mb-3">
             <label >Email</label>
             <input asp-for="LoginEmail" class="form-control" />
         </div>
-        <div class="form-group">
+        <div class="form-group max-w-sm mx-auto mb-3">
             <label >Password</label>
             <input asp-for="LoginPassword" class="form-control" />
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
+        <div class="form-group max-w-sm mx-auto mb-3">
+            <input type="checkbox" asp-for="StaySignedIn" />
+            <label asp-for="StaySignedIn" class="form-check-label">Stay signed in?</label>
+        </div>
+        <div class="form-group mt-4 max-w-md mx-auto text-center bg-green-500 text-black max-w-sm rounded-lg p-2 hover:bg-slate-300">
+            <button type="submit" class="btn w-full">Login</button>
+        </div>
     </form>
-    <p>Don't have an account? <a asp-action="Index" asp-controller="User">Register here</a>.</p>
 </div>
